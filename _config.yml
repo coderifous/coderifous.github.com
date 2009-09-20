@@ -1,0 +1,4 @@
+auto: true
+markdown: rdiscount
+lsi: true
+pygments: true
