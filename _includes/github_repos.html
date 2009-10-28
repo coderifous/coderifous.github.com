@@ -1,0 +1,26 @@
+<div id="github-repos">
+  <h1>Projects on <a href="http://github.com/coderifous">Github</a></h1>
+  <ul>
+    <li>Loading&hellip;</li>
+  </ul>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  $(function(){
+    function repoHtml(repo) {
+      return '<li><a href=":url" title=":description">:name</a></li>'.replace(/:([a-z]+)/g, function(m,p){ return repo[p] })
+    }
+
+    $.getJSON("http://github.com/api/v2/json/repos/show/coderifous?callback=?", null,
+      function(json) {
+        var by_watchers  = function(a,b) { return b.watchers - a.watchers };
+        var sorted_repos = json.repositories.sort(by_watchers);
+        var snippet = "";
+        $.each(sorted_repos, function(index, repo){
+          if (!repo.fork) snippet = snippet + repoHtml(repo);
+        })
+        $("#github-repos ul").html(snippet);
+      }
+    )
+  })
+</script>

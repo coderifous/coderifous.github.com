@@ -1,0 +1,92 @@
+@import base.sass
+
+body
+  :margin 0px
+  :background url(/images/bg.png) repeat-x
+  :font-family Arial,Verdana,Helvetica,sans-serif
+
+a
+  :color= !link
+  :text-decoration none
+  &:hover
+    :text-decoration underline
+
+.highlight
+  :background url(/images/code_bg.gif) repeat-y #f3f3f3 !important
+  :border solid 1px #DEDEDE
+  :padding 10px
+  :padding-left 10px
+  :margin-bottom 20px
+  :font-family  "Courier New",Courier,monospace
+  pre
+    :margin 0px
+
+h1, h2, h3, h4, h5
+  :font-family "Palatino Linotype","Book Antiqua",Palatino,serif
+  :margin 0px 0px 0px 0px
+
+ul
+  :list-style square
+
+#recent-posts
+  :margin-bottom 24px
+  ul
+    li
+      +grid(3,12)
+      :margin 0 0 10px 0
+      .post-meta
+        :color= !quiet
+
+.post
+  h2.meta
+    :font-size 1.2em
+    :color= !quiet
+    :margin-bottom 1em
+  h3.author
+    :font-size 1em
+    :color= !quiet
+    :margin-bottom 1em
+
+p em
+  :font-style italic
+
+span.quote
+  :font-size 1.4em
+  :font-family "Palatino Linotype","Book Antiqua",Palatino,serif
+  :display block
+  :padding-left 1em
+  &:before
+    :content "‟"
+  &:after
+    :content "”"
+
+code
+  :font-family monospace
+  :background-color #eef
+  :border dashed 1px #aaa
+
+#bio
+  em
+    font-weight: bold
+  +clearfix
+  img
+    :display block
+    :float right
+    :height 70px
+    :width 70px
+    :margin 0px 0px 4px 4px
+
+#recent-posts
+  +clearfix
+  :padding-bottom 1em
+  :margin-bottom 1em
+  :border-bottom solid 1px
+  :border-color= !quiet
+  li a
+    :font-weight bold
+
+#recent-posts, #projects
+  h1
+    :margin-bottom 0.5em
+    :display block
+    :clear both

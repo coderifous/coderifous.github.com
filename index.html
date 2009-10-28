@@ -1,12 +1,61 @@
 ---
-title: Index goes here
+title: Home
 layout: default
 ---
 
-<div id="stub">
-  {% highlight ruby %}
-  def when?
-    puts "soon"
-  end
-  {% endhighlight %}
+<div id="recent-posts">
+  <h1>Recent Posts</h1>
+  <ul>
+  {% for post in site.posts limit:3 %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
+    <div class="post-meta">{{ post.meta }}</div></li>
+  {% endfor %}
+</ul>
+</div>
+
+<div id="projects">
+  <h1>Some of my projects...</h1>
+
+  <h2><a href="http://github.com/coderifous/dancing_with_sprockets">Dancing with Sprockets</a></h2>
+  <p>
+    Enjoy the benefits of managing javascript dependencies right in the code, and serving <a href="http://getsprockets.org/installation_and_usage">sprocketized</a> javascript, without the hassle of configuration.
+    If your rails app has javascript, you should be using this plugin.
+  </p>
+  <ul>
+    <li>Your javascript (e.g. application.js) lives under app/javascripts</li>
+    <li>Third party javascript (e.g. jquery plugins) lives under app/javascripts/vendor</li>
+    <li>You add require directives to your javascript, e.g. <code>//= require &lt;vendor/jquery.localization.js&gt;</code></li>
+    <li>You include your javascript using the <code>sprockets_include_tag</code> instead of <code>javascript_include_tag</code>
+  </ul>
+  <p>
+    Thanks to <a href="http://twitter.com/chmurph2">@chmurph2</a> for the name,
+    and thanks to Mike Myers for this promotional video:
+  </p>
+
+  <div id="sprockets-video" style="display: none">
+    <object width="640" height="505"><param name="movie" value="http://www.youtube.com/v/QHZR9SA5pOg&hl=en&fs=1&rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/QHZR9SA5pOg&hl=en&fs=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="505"></embed></object>
+  </div>
+
+  <p>
+    <a rel="facebox" href="#sprockets-video" title="Dancing with Sprockets video">
+      <img src="http://img.youtube.com/vi/QHZR9SA5pOg/0.jpg" />
+    </a>
+  </p>
+
+  <p><em>Now is the time on sprockets vhen ve dance!</em></p>
+
+  <h2><a href="http://github.com/coderifous/jquery-localize">jquery.localize</a></h2>
+  <p>
+    A jQuery plugin that makes it easy to internationalize your web site.
+    Useful for static, popular sites that have been translated into 30+ languages.
+  </p>
+
+  <h2><a href="http://lmgtfy.com">LMGTFY</a></h2>
+  <p>Streamlined <a href="http://lmgtfy.com?q=snark">snark</a> delivery.</p>
+
+  <h2><a href="http://twiddic.com">Twiddic</a></h2>
+  <p>
+    Reviews from the twittersphere - people tweet their reviews of whatever, and twiddic keeps score.  It's a work in progress.
+    Someday, when I figure out how do derive sentiment from less than 140 characters, this will be where I apply that.
+  </p>
 </div>
