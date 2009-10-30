@@ -103,6 +103,7 @@ ul { list-style: square; }
 #recent-posts { margin-bottom: 24px; }
 #recent-posts ul li { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 220px; margin: 0 0 10px 0; }
 #recent-posts ul li .post-meta { color: #797979; }
+#recent-posts ul li * { padding-right: 8px; }
 
 .post h2.meta { font-size: 1.2em; color: #797979; margin-bottom: 1em; }
 .post h3.author { font-size: 1em; color: #797979; margin-bottom: 1em; }
