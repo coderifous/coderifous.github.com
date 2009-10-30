@@ -102,6 +102,7 @@ ul { list-style: square; }
 
 #recent-posts { margin-bottom: 24px; }
 #recent-posts ul li { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 220px; margin: 0 0 10px 0; }
+#recent-posts ul li .post-date { display: block; }
 #recent-posts ul li .post-meta { color: #797979; }
 #recent-posts ul li * { padding-right: 8px; }
 
