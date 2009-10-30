@@ -108,6 +108,7 @@ ul { list-style: square; }
 
 .post h2.meta { font-size: 1.2em; color: #797979; margin-bottom: 1em; }
 .post h3.author { font-size: 1em; color: #797979; margin-bottom: 1em; }
+.post a { font-weight: bold; color: #094872; text-shadow: #B0D9FF 1px 1px 2px; }
 
 p em { font-style: italic; }
 
@@ -115,7 +116,7 @@ span.quote { font-size: 1.4em; font-family: "Palatino Linotype","Book Antiqua",P
 span.quote:before { content: "‟"; }
 span.quote:after { content: "”"; }
 
-code { font-family: monospace; background-color: #eef; border: dashed 1px #aaa; }
+code { font-family: monospace; background-color: #eef; }
 
 #bio { overflow: hidden; display: inline-block; }
 #bio em { font-weight: bold; }

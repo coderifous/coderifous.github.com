@@ -7,6 +7,7 @@ layout: default
   <h2 class="meta">{{ page.meta }}</h2>
   {{ content }}
   <h3 class="author">Posted on {{ page.date | date_to_string }} by Jim Garvin</h3>
-  {% include disqus_comments.html %}
 </div>
+
+{% include disqus_comments.html %}
 
