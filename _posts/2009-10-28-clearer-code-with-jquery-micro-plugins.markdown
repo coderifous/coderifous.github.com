@@ -54,7 +54,7 @@ setup block.
 Now our setup block gives us a bird's eye view of what's going
 on when the page loads, and we can easily jump to those function definitions to
 see what's going on and make changes.  That's better, and it's how I've been
-doing it for a while, but using a pattern that [Ryan](http://twitter.com/rmm5t)
+doing it for a while, but using a pattern that [Ryan McGeary](http://ryan.mcgeary.org/)
 came up with, we can make this code reveal more about what it's doing and make
 it easier to maintain by embracing some jQuery-ness.
 
