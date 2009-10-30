@@ -26,7 +26,7 @@ like this:
 Maybe this is OK for really small apps, but when you've got a few hundred lines
 of javascript milling around in there, you'll eventually start to feel the pain.
 You'll try things like punctuating sections of code with comments, [which we all
-know is bad](http://google.com?q=comments+are+code+smell), or breaking your
+know is bad](http://google.com/search?q=comments+are+code+smell), or breaking your
 `$(document).ready()` calls up into a several `$(document).ready()` calls, one after the other.
 _Gross_.
 
