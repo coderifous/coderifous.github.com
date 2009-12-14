@@ -93,12 +93,15 @@ body { margin: 0px; background: url(/images/bg.png) repeat-x; font-family: Arial
 a { color: #2d4a80; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
+blockquote { padding-left: 1em; font-family: "Palatino Linotype","Book Antiqua",Palatino,serif; font-size: 1.2em; border-left: 1px dashed #999; }
+
 .highlight { background: url(/images/code_bg.gif) repeat-y #f3f3f3 !important; border: solid 1px #DEDEDE; padding: 10px; padding-left: 10px; margin-bottom: 20px; font-family: "Courier New",Courier,monospace; }
 .highlight pre { margin: 0px; }
 
 h1, h2, h3, h4, h5 { font-family: "Palatino Linotype","Book Antiqua",Palatino,serif; margin: 0px 0px 0px 0px; }
 
 ul { list-style: square; }
+ul li { margin-bottom: 0.4em; }
 
 #recent-posts { margin-bottom: 24px; }
 #recent-posts ul li { display: inline; float: left; margin-left: 10px; margin-right: 10px; width: 220px; margin: 0 0 10px 0; }
