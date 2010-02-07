@@ -1,5 +1,10 @@
 @import base.sass
 
+=border-radius
+  border-radius: 2px
+  -moz-border-radius: 2px
+  -webkit-border-radius: 2px
+
 body
   :margin 0px
   :background url(/images/bg.png) repeat-x
@@ -80,16 +85,21 @@ code
   :font-family monospace
   :background-color #eef
 
+#subscribe
+  margin-bottom: 1em
+  +clearfix
+  a
+    :display block
+    :float left
+    :margin 0px 0px 4px 4px
+    img
+      +border-radius
+      :height 36px
+      :width 36px
+
 #bio
   em
     font-weight: bold
-  +clearfix
-  img
-    :display block
-    :float right
-    :height 70px
-    :width 70px
-    :margin 0px 0px 4px 4px
 
 #recent-posts
   +clearfix

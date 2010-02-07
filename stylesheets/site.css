@@ -121,10 +121,12 @@ span.quote:after { content: "”"; }
 
 code { font-family: monospace; background-color: #eef; }
 
-#bio { overflow: hidden; display: inline-block; }
+#subscribe { margin-bottom: 1em; overflow: hidden; display: inline-block; }
+#subscribe { display: block; }
+#subscribe a { display: block; float: left; margin: 0px 0px 4px 4px; }
+#subscribe a img { border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; height: 36px; width: 36px; }
+
 #bio em { font-weight: bold; }
-#bio { display: block; }
-#bio img { display: block; float: right; height: 70px; width: 70px; margin: 0px 0px 4px 4px; }
 
 #recent-posts { overflow: hidden; display: inline-block; padding-bottom: 1em; margin-bottom: 1em; border-bottom: solid 1px; border-color: #797979; }
 #recent-posts { display: block; }
