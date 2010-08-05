@@ -8,7 +8,7 @@ tags:
 
 Yehuda recently wrote about his [trials in trying to switch to Vim](http://yehudakatz.com/2010/07/29/everyone-who-tried-to-convince-me-to-use-vim-was-wrong/), the failed approaches, and what finally did work for him.  I thought this was great, because different people learn in different ways, and the unique approach someone else comes up with might work well for you too.  In that spirit, I wanted to share a few methods I used while learning Vim that worked well for me.
 
-Separated into their own posts for digestability, and in no particular order...
+Separated into their own posts for digestibility, and in no particular order...
 
 * [Switching from the arrows to `hjkl`](switching-from-arrows-to-hjkl.html)
 * [Remap Caps Lock to Control](remap-caps-lock-to-control.html)
