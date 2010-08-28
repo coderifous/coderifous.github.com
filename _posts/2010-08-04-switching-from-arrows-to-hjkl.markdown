@@ -28,7 +28,7 @@ The last ingredient is to avoid using the arrow keys while you are coding.  For 
 
 ### An approach that didn't work so well for me
 
-I also tried using mnemonics: `hjkl` + "left, down, up, right" = "keft, jown, kup, light".
+I also tried using mnemonics: `hjkl` + "left, down, up, right" = "heft, jown, kup, light".
 
 So if I needed to move the cursor down by 3 lines, I'd decipher in my head that "down" became "jown", which started with a `j`, so I need to press `j` three times.  This was slow, and it sucked, and my friends had endless hours of amusement watching me use my mental decoder ring just to move around my editor.
 
