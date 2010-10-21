@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Switching From Arrows To hjkl"
-meta: "An for exercise kicking the arrow key habit in Vim."
+meta: "An exercise for kicking the arrow key habit in Vim."
 tags:
 - vim
 ---
