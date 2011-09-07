@@ -74,6 +74,6 @@ Javascript applications where the primary unit of reuse was the jQuery plugin,
 and encapsulation was had via closures.
 
 The classical OO approach is not the only game in town for good software design.
-Don't forget that the DOM is already a model that has it's own state and
+Don't forget that the DOM is already a model that has its own state and
 behavior, and jQuery plugins are your best bet for creating reusable code with
 naturally occurring encapsulation via scoped variables and closures.
