@@ -11,7 +11,7 @@ body
   :font-family Arial,Verdana,Helvetica,sans-serif
 
 a
-  :color= !link
+  color: $link
   :text-decoration none
   &:hover
     :text-decoration underline
@@ -50,18 +50,18 @@ ul
       .post-date
         :display block
       .post-meta
-        :color= !quiet
+        color: $quiet
       *
         :padding-right 8px
 
 .post
   h2.meta
     :font-size 1.2em
-    :color= !quiet
+    color: $quiet
     :margin-bottom 1em
   h3.author
     :font-size 1em
-    :color= !quiet
+    color: $quiet
     :margin-bottom 1em
   a
     :font-weight bold
@@ -83,7 +83,6 @@ span.quote
 
 code
   :font-family monospace
-  :background-color #eef
 
 #subscribe
   margin-bottom: 1em
@@ -106,7 +105,7 @@ code
   :padding-bottom 1em
   :margin-bottom 1em
   :border-bottom solid 1px
-  :border-color= !quiet
+  border-color: $quiet
   li a
     :font-weight bold
 

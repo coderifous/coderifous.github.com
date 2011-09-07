@@ -1,0 +1,7 @@
+Make sure you have jekyll gem:
+> gem install jekyll
+
+Serve from jekyll:
+> jekyll --serve
+
+Hit localhost:4000
