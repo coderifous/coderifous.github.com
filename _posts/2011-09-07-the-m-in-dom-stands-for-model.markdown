@@ -36,7 +36,8 @@ parts of your application.
 
 With that in mind, I think writing a class that gives you another model on top
 of the DOM, just so you can ape classical OO in Javascript, is a smell.  As an
-illustration, I'll rewrite Ken's example using the jQuery plugin approach.
+illustration, I'll rewrite Ken's example using the [jQuery plugin
+approach](/2009/10/28/clearer-code-with-jquery-micro-plugins.html).
 
 {% highlight coffeescript %}
   $.fn.flash = (content = null, htmlClass = "notice") ->
